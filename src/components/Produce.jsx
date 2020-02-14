@@ -4,15 +4,11 @@ import PropTypes from "prop-types";
 function Keg(props){
   return (
     <div>
-      <div class='dropdown'>
-      <h3>{props.month}</h3>
-      <div class='dropdown-content'>
-      <ul>{props.selection.map((sel, index) =>
-        <li key={index}> {sel}</li>
-      )}</ul>
-      </div>
-      </div>
-      </div>
+      <h3>{props.name}</h3>
+      <h2>{props.brand}</h2>
+      <h2>{props.price}</h2>
+      <h2>{props.alcoholContent}</h2>
+    </div>
     );
   }
 
@@ -23,4 +19,4 @@ function Keg(props){
     alcoholContent: PropTypes.string.isRequired,
   };
 
-  export default Produce;
+  export default Keg;
