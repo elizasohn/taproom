@@ -27,9 +27,9 @@ function Header(){
 
   return (
     <div style = {headerStyle}>
-      <h1>Farmer's Market</h1>
+      <h1>Beer Time Tap Room</h1>
       <div style = {links}>
-      <Link to="/">Home</Link> | <Link to="/marketschedulelist">Market Schedule</Link> | <Link to="/producelist">Produce Offerings</Link>
+      <Link to="/">Home</Link> | <Link to="/newkeg">Add a Keg</Link> 
       </div>
     </div>
   );
