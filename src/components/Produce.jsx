@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Produce(props){
+function Keg(props){
   return (
     <div>
       <div class='dropdown'>
@@ -16,9 +16,11 @@ function Produce(props){
     );
   }
 
-  Produce.propTypes = {
-    month: PropTypes.string.isRequired,
-    selection: PropTypes.string.isRequired,
+  Keg.propTypes = {
+    name: PropTypes.string.isRequired,
+    brand: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    alcoholContent: PropTypes.string.isRequired,
   };
 
   export default Produce;
